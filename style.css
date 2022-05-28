@@ -8,8 +8,9 @@ video {
    object-fit: cover;
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: absolute;
     overflow: hidden;
+    z-index: -100;
 }
 body {
 margin: 0;
@@ -25,7 +26,7 @@ text-align: center;
     height: 100vh;
 grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
-    background-color: red;
+
 }
 .sidebar {
 background-color: #03427F;
@@ -197,7 +198,7 @@ overflow: hidden;
 .header {
 display: grid;
 grid-row: 1 / 2;
-background-color: white;
+background-color: rgb(255,255,255, 0.9);
 grid-template-rows: 1fr 1fr;
 padding: 20px 40px;
 
@@ -210,7 +211,7 @@ grid-template-columns:  35px 2fr auto auto auto ;
 
 input {
 width: 80%;
-background-color: #D9D9E0;
+background-color: rgb(255,255,255, 01);;
 border: none;
 border-radius: 10px;
 height: 25px;
@@ -305,7 +306,7 @@ padding: 70px 20px;
 }
 
 .leftside .sq {
-background-color: white;
+background-color: rgb(255,255,255, 0.5);
 border-radius: 5px;
 display: grid;
 grid-template-rows: 25px 1fr auto;
@@ -342,7 +343,7 @@ margin-left: 10px;
     transform: scale(1.05);
 }
 .rightside .rc {
-    background-color: white;
+    background-color: rgb(255,255,255, 0.5);
     border-radius: 5px;
 }
 .topheader img:nth-child(3) {
